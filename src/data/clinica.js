@@ -1,13 +1,57 @@
 window.dadosClinica = {
-  nome: 'Andreia Ventura',
-  especialidade: 'Podologia',
-  demonstracao: true,
-  telefone: null,
-  endereco: null,
-  servicos: {
-    unhas: { titulo: 'Unhas encravadas', texto: 'A proposta é avaliar o desconforto ao redor da unha e conversar sobre os cuidados adequados para cada situação. O primeiro passo é entender o que você está sentindo, sem antecipar um tratamento antes da avaliação.' },
-    calosidades: { titulo: 'Calosidades', texto: 'Um olhar atento às áreas de pressão e ao conforto dos pés. A avaliação orienta os cuidados e permite conversar sobre hábitos e fatores que podem contribuir para o incômodo.' },
-    fissuras: { titulo: 'Fissuras nos calcanhares', texto: 'Cuidado voltado à pele dos calcanhares, com avaliação individual e orientações de manutenção. A conduta depende das condições da pele e das necessidades de cada pessoa.' },
-    preventivo: { titulo: 'Cuidado preventivo', texto: 'Atenção regular aos pés, às unhas e à pele. Um momento para esclarecer dúvidas e conhecer cuidados que podem fazer parte da sua rotina.' }
+  "nome": "Andreia Ventura",
+  "especialidade": "Podologia",
+  "demonstracao": true,
+  "telefone": null,
+  "endereco": null,
+  "servicos": {
+    "preventivo": {
+      "titulo": "Podologia preventiva",
+      "resumo": "Atenção regular aos pés e orientações para o cuidado diário.",
+      "texto": "Um atendimento voltado ao cuidado regular dos pés, com espaço para esclarecer dúvidas e conversar sobre sua rotina.",
+      "icone": "shield"
+    },
+    "pediatrica": {
+      "titulo": "Podologia pediátrica",
+      "resumo": "Cuidado com os pés das crianças, com atenção e acolhimento.",
+      "texto": "Atendimento aos pés das crianças, com acolhimento e conversa com os responsáveis sobre as necessidades de cada caso.",
+      "icone": "heart"
+    },
+    "desportiva": {
+      "titulo": "Podologia desportiva",
+      "resumo": "Atenção aos pés de quem pratica esportes e atividades físicas.",
+      "texto": "Uma avaliação que considera a prática esportiva e a rotina de atividades físicas para conversar sobre os cuidados com os pés.",
+      "icone": "shield"
+    },
+    "infeccao": {
+      "titulo": "Infecção",
+      "resumo": "Avaliação individual para orientar o cuidado e os próximos passos.",
+      "texto": "A avaliação permite entender a situação e orientar os próximos passos, incluindo encaminhamento quando necessário.",
+      "icone": "medical"
+    },
+    "laminas": {
+      "titulo": "Correção de lâminas",
+      "resumo": "Avaliação das unhas e das possibilidades de cuidado individual.",
+      "texto": "Um olhar individual para as lâminas ungueais — a parte visível das unhas. As possibilidades de correção são discutidas após a avaliação.",
+      "icone": "layers"
+    },
+    "hidratacao": {
+      "titulo": "Cauterização e hidratação",
+      "resumo": "Cuidados definidos conforme a avaliação e a necessidade da pele.",
+      "texto": "A indicação de cada cuidado é individual. Durante a avaliação, a profissional explica a proposta de atendimento e esclarece suas dúvidas.",
+      "icone": "drop"
+    },
+    "unhas": {
+      "titulo": "Unha encravada",
+      "resumo": "Atenção ao desconforto ao redor da unha, com avaliação individual.",
+      "texto": "O atendimento começa pela avaliação do desconforto e das condições da unha. Os cuidados são explicados conforme as necessidades de cada pessoa.",
+      "icone": "medical"
+    },
+    "micose": {
+      "titulo": "Unhas com fungos e micose",
+      "resumo": "Acompanhamento das unhas e orientações para a continuidade do cuidado.",
+      "texto": "Acompanhamento de unhas com fungos e micose, com avaliação individual e conversa sobre a continuidade do cuidado e eventuais encaminhamentos.",
+      "icone": "layers"
+    }
   }
 };
