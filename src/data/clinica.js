@@ -1,9 +1,11 @@
 window.dadosClinica = {
-  "nome": "Andreia Ventura",
+  "nome": "Andréa Ventura",
   "especialidade": "Podologia",
   "demonstracao": true,
-  "telefone": null,
-  "endereco": null,
+  "telefone": "5511961431101",
+  "telefoneExibicao": "(11) 96143-1101",
+  "instagram": "https://www.instagram.com/podologa.andrea/",
+  "endereco": "Rua Jaguaretê, 428, bloco A, sala 1",
   "servicos": {
     "preventivo": {
       "titulo": "Podologia preventiva",

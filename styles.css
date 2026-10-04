@@ -34,3 +34,26 @@ dialog{width:min(560px,calc(100% - 32px));max-height:85svh;padding:48px;overflow
 }
 @media(max-width:360px){.hero-grade{min-height:600px;padding-inline:20px;padding-top:220px}.hero h1{font-size:30px}.hero-acoes{gap:2px 12px}}
 @media print{.cabecalho{position:static}.barra-mobile,.menu-botao{display:none!important}.secao{padding-block:35px}a{text-decoration:underline}}
+
+/* Seleção de serviços e convite contextual, sem animações. */
+[hidden]{display:none!important}
+.instrucao-servicos{font-size:14px;line-height:1.7;margin:-20px 0 32px;max-width:580px}
+.selecionar-servico{display:flex;align-items:center;gap:10px;min-height:48px;margin-top:14px;cursor:pointer;font-size:12px;font-weight:600}
+.selecionar-servico input{appearance:auto;width:20px;height:20px;flex:none;accent-color:var(--musgo);cursor:pointer}
+.selecionar-servico:focus-within{outline:2px solid var(--musgo);outline-offset:4px;border-radius:3px}
+.servico.selecionado{border-top:2px solid var(--musgo)}
+.expandir-servicos{display:flex;justify-content:center;margin-top:34px}
+.expandir-servicos button{font-size:14px;gap:30px}
+.servicos-convite{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;margin-top:40px;padding:36px;background:#dce5dc;border-radius:12px}
+.servicos-convite h3{font-size:26px;line-height:1.25;margin-bottom:14px}
+.servicos-convite .sobretitulo{font-size:10px;margin-bottom:12px}
+#resumo-servicos{font-size:14px;line-height:1.8;overflow-wrap:anywhere}
+.servicos-convite-acao{justify-self:end;max-width:100%}
+.servicos-convite-acao .botao{background:var(--musgo);color:var(--marfim);white-space:normal;text-align:left}
+.servicos-convite-acao>p{font-size:12px;line-height:1.7;margin-top:12px}
+#previa-mensagem{margin:24px 0}
+#previa-mensagem label{display:block;font-size:13px;font-weight:600;margin-bottom:10px}
+#mensagem-servicos{display:block;width:100%;padding:14px;border:1px solid #879a89;border-radius:6px;background:#fff;color:#1c2d24;font:inherit;font-size:14px;line-height:1.6;resize:vertical}
+#status-copia{font-size:13px;line-height:1.5}
+dialog{max-height:calc(100dvh - 32px);overflow-y:auto}
+@media(max-width:760px){.servicos-convite{grid-template-columns:1fr;padding:26px 22px;gap:24px}.servicos-convite-acao{justify-self:stretch}.servicos-convite-acao .botao{width:100%;justify-content:space-between}.servicos-convite h3{font-size:24px}.instrucao-servicos{margin-top:-10px}.selecionar-servico{margin-top:8px}}
