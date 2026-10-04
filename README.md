@@ -32,4 +32,8 @@ Confirmar nome, serviços, telefone, endereço e imagens reais. O agendamento é
 
 Os arquivos podem ser hospedados em um servidor estático. Não há API, banco de dados ou integração de agendamento.
 
+## Vercel
+
+O arquivo `vercel.json` define a publicação estática: `npm run build` prepara `dist/`, contendo somente arquivos do navegador. O preset é `Other` (`framework: null`). O servidor `server.cjs` serve apenas para desenvolvimento local e não deve ser executado como função na Vercel.
+
 Detalhes de implementação e testes em [LEIA-ME.md](LEIA-ME.md). Créditos dos recursos em [assets/CREDITOS.md](assets/CREDITOS.md).
