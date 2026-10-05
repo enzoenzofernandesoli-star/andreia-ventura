@@ -39,10 +39,11 @@ function servicosEscolhidos() {
 }
 function atualizarSelecao() {
   const titulos = servicosEscolhidos();
-  resumo.textContent = titulos.length ? `${titulos.length} ${titulos.length === 1 ? 'cuidado selecionado' : 'cuidados selecionados'}: ${titulos.join(' · ')}.` : 'Escolha os serviços acima ou converse conosco para entender por onde começar.';
+  resumo.textContent = titulos.length ? `${titulos.length} ${titulos.length === 1 ? 'serviço selecionado' : 'serviços selecionados'}: ${titulos.join(' · ')}.` : 'Selecione os serviços ou peça orientação pelo WhatsApp.';
   escolhas.forEach(campo => {
     campo.closest('.servico').classList.toggle('selecionado', campo.checked);
-    campo.nextElementSibling.textContent = campo.checked ? 'Cuidado selecionado' : 'Selecionar cuidado';
+    const tipo = window.dadosClinica.servicos[campo.value].tipo;
+    campo.nextElementSibling.textContent = campo.checked ? `${tipo === 'cuidado' ? 'Cuidado' : 'Tratamento'} selecionado` : `Selecionar ${tipo}`;
   });
 }
 escolhas.forEach(campo => {
@@ -61,7 +62,7 @@ botaoVer.addEventListener('click', () => {
 });
 function montarMensagem() {
   const titulos = servicosEscolhidos();
-  return titulos.length ? `Olá! Gostaria de agendar uma avaliação e saber mais sobre os seguintes cuidados:\n\n${titulos.map(titulo => `• ${titulo}`).join('\n')}\n\nQuais horários estão disponíveis?` : 'Olá! Gostaria de agendar uma avaliação de podologia. Podem me orientar sobre os cuidados e horários disponíveis?';
+  return titulos.length ? `Olá! Gostaria de agendar uma avaliação e saber mais sobre os seguintes serviços:\n\n${titulos.map(titulo => `• ${titulo}`).join('\n')}\n\nQuais horários estão disponíveis?` : 'Olá! Gostaria de agendar uma avaliação de podologia. Podem me orientar sobre os cuidados e horários disponíveis?';
 }
 document.querySelectorAll('[data-agendar]').forEach(botao => botao.addEventListener('click', () => {
   const mensagem = montarMensagem();
